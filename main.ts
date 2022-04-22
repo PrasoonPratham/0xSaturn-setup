@@ -6,12 +6,10 @@ dotenv.config();
 
 // Initialize client
 const client = new SaturnClient(
-    new Wallet(
-        process.env.PRIVATE_KEY!,
-        getDefaultProvider(
-            'https://rpc-mumbai.maticvigil.com'
-        )
-    )
+  new Wallet(
+    process.env.PRIVATE_KEY!,
+    getDefaultProvider("https://rpc-mainnet.matic.quiknode.pro")
+  )
 );
 
 // Deploy the contract -- Contract registry.

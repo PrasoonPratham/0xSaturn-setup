@@ -8,7 +8,7 @@ dotenv.config();
 const client = new SaturnClient(
   new Wallet(
     process.env.PRIVATE_KEY!,
-    getDefaultProvider("https://matic-mumbai.chainstacklabs.com")
+    getDefaultProvider("https://rpc-mainnet.matic.quiknode.pro")
   )
 );
 
